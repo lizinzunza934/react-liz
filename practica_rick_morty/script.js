@@ -1,4 +1,4 @@
-console.log("Hello World Rick and Morty");
+console.log("Hello World Marvel");
 
 async function obtenerPersonajes() {
     const response = await fetch("https://rickandmortyapi.com/api/character");
