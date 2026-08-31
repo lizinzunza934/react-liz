@@ -1,0 +1,19 @@
+.btn-back {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 10px 18px;
+    background-color: #80112E;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-family: 'Georgia', serif;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.btn-back:hover {
+    background-color: #A63D5B;
+    transform: translateX(-5px);
+    color: #ffffff;
+}

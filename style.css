@@ -1,42 +1,78 @@
-html {
-  height: 100%;
-  background: 50% 50% no-repeat
-    url('data:image/svg+xml,<svg viewBox="-20 -5 60 40" width="140" xmlns="http://www.w3.org/2000/svg" opacity="0.2"><path d="M1 8l11-7 11 7v8l-11 7-11-7zm0 0l11 8 11-8m0 8L12 8 1 16M12 1v7m0 8v7" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2"/><text x="-12" y="32" font-size="5" font-family="monospace" fill="currentColor">Built on CodePen</text></svg>');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-  margin:0;
-  font-family: Georgia;
-  line-height: 1.6;
-  background-color: #D3E0F0;
-  color: #222;
+    font-family: 'Georgia';
+    background-color: #F2F1CB;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
 }
+
+.main-container {
+    max-width: 800px;
+    width: 100%;
+    background: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
 
 header {
-  text-align: center;
-  padding: 50px 20px;
-  background-color: #F0F0CC;
-  color: #8A2727;  
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 20px;
 }
 
-header h1 {
-  margin-bottom: 5px;
-  header p {
-    margint-top: 0;
-    color: #ccc;
-  }
+h1 {
+    color: #80112E;
+    font-size: 2.5rem;
 }
 
-nav {
-    margin-top: 25px;
+
+.work-section h2 {
+    color: #A63D5B;
+    margin-bottom: 5px;
 }
 
-nav a {
-    color: #C95D5D;
+.subtitle {
+    color: #7f8c8d;
+    margin-bottom: 25px;
+    font-size: 1.1rem;
+}
+
+.job-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.job-list li a {
+    display: block;
+    background-color: #fff;
+    color: #CC728C;
     text-decoration: none;
-    margin: 0 10px;
+    padding: 20px;
+    border: 1px solid #e1e8ed;
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: center;
+    transition: all 0.3s ease;
 }
 
-nav a:hover {
-    text-decoration: underline;
+.job-list li a:hover {
+    background-color: #A63D5B;
+    color: #fff;
+    border-color: #3498db;
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
 }
